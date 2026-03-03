@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>MSI Career Development Resource Hub</title>
 </head>
 <body>
-
+  <a class="skip-link" href = "#main">Skip to Main Content</a>
     <header>
-  <a href = "#main">Skip to Main Content</a>
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
             <ul>
-                <li><a href = "index.html">Home</a></li>
+                <li class="active"><a href = "index.html" aria-current="page">Home</a></li>
+                <!-- I learned how to add aria to improve accessibility from chatgpt-->
                 <li><a href = "resume.html">Resumes</a></li>
                 <li><a href = "networking.html">Networking & Connections</a></li>
                 <li><a href = "interviews.html">Interviews</a></li>
@@ -46,7 +48,7 @@
       <h2>Start Here</h2>
       <div>
         <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
-        <ul>
+        <ul class="link-grid">
             <li><a href="resume.html">Resumes</a></li>
             <li><a href="networking.html">Networking & Connections</a></li>
             <li><a href="https://umich.instructure.com/courses/137916/pages/attend-an-event">Career Exploration</a></li>
@@ -56,8 +58,8 @@
 
       </div>
       <div>
-        <h3>Most Popular Resources</h3>
-        <ul>
+        <h2>Most Popular Resources</h2>
+        <ul class="link-grid">
           <li><a href="https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0" target="_blank">UMSI Resume Guide</a></li>
           <li><a href="https://umich.instructure.com/courses/137916/pages/attend-an-event" target="_blank">Attend a Career Event</a></li>
           <li><a href="https://docs.google.com/document/d/18HMt79BU8ovGf9z7_P7No5tuwUS6qHNW5u0sgrepLtE/edit?tab=t.0" target="_blank">Networking Tips</a></li>
