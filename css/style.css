@@ -6,11 +6,11 @@ body {
     margin: 0;
 }
 
-main a{
-  color: #00274C;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  font-weight: 700;
+main a {
+    color: #00274C;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-weight: 700;
 }
 
 header,
@@ -166,6 +166,11 @@ section>ol {
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 8px;
+    min-height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .link-grid p {
@@ -205,6 +210,11 @@ section>ol {
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 8px;
+    min-height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .cards-section .link-grid p {
