@@ -24,7 +24,7 @@
         <h1>Networking & Connections</h1>
 
     </header>
-    <main id="main">
+    <main id="main" class="resource-page">
         <section>
             <h2>Start Building Connections</h2>
             <p>
@@ -33,7 +33,8 @@
                 industries, and opportunities. The resources below will help you reach out professionally and
                 confidently.
             </p>
-            <img src="images/networking.jpeg" width="500" alt="Four alumni holding a Michigan Alumni Association banner at a networking event">
+            <img src="images/networking.jpeg" width="500"
+                alt="Four alumni holding a Michigan Alumni Association banner at a networking event">
         </section>
 
         <section>
@@ -62,30 +63,41 @@
 
         <section>
             <h2>Networking FAQ</h2>
-            <ul>
-                <li>
-                    <strong>Who should I reach out to first?</strong><br>
-                    Begin with low-pressure contacts: classmates, alumni, student org members, or people who share a
-                    role you’re interested in.
-                    A small shared connection can make the first outreach feel easier.
-                </li>
-                <li>
-                    <strong>How many messages should I send if I don’t hear back?</strong><br>
-                    One follow-up is enough. Wait about 5–7 days, send a brief and friendly follow-up, then move on if
-                    there’s no response.
-                </li>
-                <li>
-                    <strong>Do I need LinkedIn Premium to network?</strong><br>
-                    No. A clear profile, a thoughtful message, and consistent effort matter more than paid features.
-                    You can also network through events, student groups, and alumni communities.
-                </li>
-                <li>
-                    <strong>What should I ask for in a first message?</strong><br>
-                    Avoid asking for a job. Ask for a short chat (15–20 minutes) or a few questions about their role,
-                    team, or career path.
-                    This keeps the request reasonable and respectful.
-                </li>
-            </ul>
+
+            <div class="faq-list">
+                <details>
+                    <summary>Who should I reach out to first?</summary>
+                    <div class="faq-answer">
+                        <p>Begin with low-pressure contacts: classmates, alumni, student org members, or people who
+                            share a role you’re interested in. A small shared connection can make the first outreach
+                            feel easier.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>How many messages should I send if I don’t hear back?</summary>
+                    <div class="faq-answer">
+                        <p>One follow-up is enough. Wait about 5–7 days, send a brief and friendly follow-up, then move
+                            on if there’s no response.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Do I need LinkedIn Premium to network?</summary>
+                    <div class="faq-answer">
+                        <p>No. A clear profile, a thoughtful message, and consistent effort matter more than paid
+                            features. You can also network through events, student groups, and alumni communities.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>What should I ask for in a first message?</summary>
+                    <div class="faq-answer">
+                        <p>Avoid asking for a job. Ask for a short chat (15–20 minutes) or a few questions about their
+                            role, team, or career path. This keeps the request reasonable and respectful.</p>
+                    </div>
+                </details>
+            </div>
         </section>
 
         <section>
@@ -134,9 +146,13 @@ ChatGPT. (2026). ChatGPT (GPT-5.2) [Large language model]. -->
 
     </main>
     <footer>
-        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI
-                Career Development Office </a></p>
+        <p>&copy; <span id="year"></span> University of Michigan School of Information | <a
+                href="https://umich.instructure.com/courses/137916">UMSI Career Development Office</a></p>
     </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

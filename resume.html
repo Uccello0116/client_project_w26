@@ -10,7 +10,7 @@
 </head>
 
 <body>
- <a class="skip-link" href="#main">Skip to Main Content</a>
+  <a class="skip-link" href="#main">Skip to Main Content</a>
   <header>
     <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
     <nav>
@@ -24,7 +24,7 @@
     <h1>Resume Support</h1>
 
   </header>
-  <main id="main">
+  <main id="main" class="resource-page">
 
     <section>
       <h2>Craft a Resume that Tells Your Story</h2>
@@ -43,7 +43,8 @@
           href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank">meet with a
           CDO Career Coach</a> to review your materials.
       </p>
-      <img src="images/resume.jpg" width="500" alt="A female professor is discussing with a female student about how to revise the resume.">
+      <img src="images/resume.jpg" width="500"
+        alt="A female professor is discussing with a female student about how to revise the resume.">
     </section>
 
     <section>
@@ -102,25 +103,39 @@
 
     <section>
       <h2>Resume FAQ</h2>
-      <ul>
-        <li>
-          <strong>How long should my resume be?</strong><br>
-          For most UMSI students and new grads, one page is best. More experienced professionals may require two pages.
-        </li>
-        <li>
-          <strong>Do I need a different resume for each application?</strong><br>
-          It’s wise to tailor your resume to the requirements and keywords of each opportunity.
-        </li>
-        <li>
-          <strong>Is it okay to include coursework or student projects?</strong><br>
-          Absolutely! UMSI coursework and projects are valued by employers, especially if they show relevant skills and
-          impact.
-        </li>
-        <li>
-          <strong>How often should I update my resume?</strong><br>
-          Update your resume every semester, after major projects, or whenever you gain a new role or responsibility.
-        </li>
-      </ul>
+
+      <div class="faq-list">
+        <details>
+          <summary>How long should my resume be?</summary>
+          <div class="faq-answer">
+            <p>For most UMSI students and new grads, one page is best. More experienced professionals may require two
+              pages.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Do I need a different resume for each application?</summary>
+          <div class="faq-answer">
+            <p>It’s wise to tailor your resume to the requirements and keywords of each opportunity.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Is it okay to include coursework or student projects?</summary>
+          <div class="faq-answer">
+            <p>Absolutely! UMSI coursework and projects are valued by employers, especially if they show relevant skills
+              and impact.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>How often should I update my resume?</summary>
+          <div class="faq-answer">
+            <p>Update your resume every semester, after major projects, or whenever you gain a new role or
+              responsibility.</p>
+          </div>
+        </details>
+      </div>
     </section>
     <!-- Content taken & modified from UMGPT with the prompt, "for the same content write me some intro content and resources for a resume page" - this was after I had asked for content for the home page.
         UMGPT. (2025). UMGPT (GPT-4.1 August 25th version) [Large language model]. -->
@@ -166,9 +181,13 @@
 ChatGPT. (2026). ChatGPT (GPT-5.2) [Large language model]. -->
   </main>
   <footer>
-    <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career
-        Development Office </a></p>
+    <p>&copy; <span id="year"></span> University of Michigan School of Information | <a
+        href="https://umich.instructure.com/courses/137916">UMSI Career Development Office</a></p>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 

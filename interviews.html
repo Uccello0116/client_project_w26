@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<a class="skip-link" href="#main">Skip to Main Content</a>
+    <a class="skip-link" href="#main">Skip to Main Content</a>
     <header>
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
@@ -25,7 +25,7 @@
         <h1>Interviews</h1>
     </header>
 
-    <main id="main">
+    <main id="main" class="resource-page">
         <section>
             <h2>Prepare with Confidence</h2>
             <p>
@@ -74,28 +74,40 @@
 
         <section>
             <h2>Interview FAQ</h2>
-            <ul>
-                <li>
-                    <strong>How do I answer “Tell me about yourself”?</strong><br>
-                    Keep it short (about 60–90 seconds). Use a simple structure: present (who you are now) → past
-                    (relevant experience) → future (why this role).
-                </li>
-                <li>
-                    <strong>What’s the best way to answer behavioral questions?</strong><br>
-                    Use STAR: Situation, Task, Action, Result. Focus on what <em>you</em> did and what changed because
-                    of it.
-                </li>
-                <li>
-                    <strong>How many examples should I prepare?</strong><br>
-                    Aim for 5–7 stories that can flex across questions (teamwork, conflict, leadership, failure,
-                    initiative, and impact).
-                </li>
-                <li>
-                    <strong>What questions should I ask the interviewer?</strong><br>
-                    Ask about the team’s priorities, success metrics, collaboration style, and what a great first
-                    90 days looks like.
-                </li>
-            </ul>
+
+            <div class="faq-list">
+                <details>
+                    <summary>How do I answer “Tell me about yourself”?</summary>
+                    <div class="faq-answer">
+                        <p>Keep it short (about 60–90 seconds). Use a simple structure: present (who you are now), past
+                            (relevant experience), and future (why this role).</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>What’s the best way to answer behavioral questions?</summary>
+                    <div class="faq-answer">
+                        <p>Use STAR: Situation, Task, Action, Result. Focus on what you did and what changed because of
+                            it.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>How many examples should I prepare?</summary>
+                    <div class="faq-answer">
+                        <p>Aim for 5–7 stories that can flex across questions like teamwork, conflict, leadership,
+                            failure, initiative, and impact.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>What questions should I ask the interviewer?</summary>
+                    <div class="faq-answer">
+                        <p>Ask about the team’s priorities, success metrics, collaboration style, and what a great first
+                            90 days looks like.</p>
+                    </div>
+                </details>
+            </div>
         </section>
 
         <section>
@@ -141,9 +153,13 @@ ChatGPT. (2026). ChatGPT (GPT-5.2) [Large language model]. -->
 
     </main>
     <footer>
-        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI
-                Career Development Office </a></p>
+        <p>&copy; <span id="year"></span> University of Michigan School of Information | <a
+                href="https://umich.instructure.com/courses/137916">UMSI Career Development Office</a></p>
     </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
