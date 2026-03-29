@@ -383,6 +383,18 @@ footer a {
     margin: 0;
 }
 
+.faq-list summary:focus,
+.faq-list summary:focus-visible {
+    outline: 3px solid #FFCB05;
+    outline-offset: 3px;
+    background: #EAF2FF;
+    border-radius: 12px;
+}
+
+.faq-list details:focus-within {
+    border-color: #00274C;
+}
+
 @media screen and (min-width: 1024px) {
 
     header,
